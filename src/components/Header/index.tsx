@@ -3,21 +3,25 @@ import Link from 'next/link';
 
 import styles from './header.module.scss';
 
-export function Header(): JSX.Element {
+interface HeaderProps {
+  isExtended?: boolean;
+}
+
+export function Header({ isExtended = false }: HeaderProps): JSX.Element {
   return (
     <header className={styles.container}>
-      <div className={styles.wrapper}>
-        <figure className={styles['container-logo']}>
-          <Link href="/">
+      <div className={`${styles.wrapper} ${isExtended ? styles.extended : ''}`}>
+        <Link href="/">
+          <figure className={styles['container-logo']}>
             <Image
               title="space traveling"
               src="/assets/icons/logo.svg"
-              alt="space traveling"
+              alt="logo"
               width="238"
               height="25"
             />
-          </Link>
-        </figure>
+          </figure>
+        </Link>
       </div>
     </header>
   );
