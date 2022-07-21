@@ -1,4 +1,5 @@
 import * as prismic from '@prismicio/client';
+import * as prismicH from '@prismicio/helpers';
 import { HttpRequestLike } from '@prismicio/client';
 import { enableAutoPreviews } from '@prismicio/next';
 

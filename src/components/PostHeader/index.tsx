@@ -1,6 +1,6 @@
 import { FiCalendar, FiClock, FiUser } from 'react-icons/fi';
-import { calculateReadingTime } from '../../../../utils/calculateReadingTime';
-import { formatDate } from '../../../../utils/formatDate';
+import { calculateReadingTime } from '../../utils/calculateReadingTime';
+import { formatDate } from '../../utils/formatDate';
 import styles from './styles.module.scss';
 
 interface Post {

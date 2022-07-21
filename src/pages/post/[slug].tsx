@@ -7,8 +7,8 @@ import Head from '../../../node_modules/next/head';
 import { getPrismicClient } from '../../services/prismic';
 
 import { formatPostProperties } from '../../utils/formatPostProperties';
-import { PostBanner } from './components/PostBanner';
-import { PostHeader } from './components/PostHeader';
+import { PostBanner } from '../../components/PostBanner';
+import { PostHeader } from '../../components/PostHeader';
 import styles from './post.module.scss';
 
 interface Post {

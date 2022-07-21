@@ -6,7 +6,6 @@ import { PostItem } from '../components/PostItem';
 
 import { getPrismicClient } from '../services/prismic';
 
-import commonStyles from '../styles/common.module.scss';
 import { formatDate } from '../utils/formatDate';
 import { formatPostsProperties } from '../utils/formatPostsProperties';
 import styles from './home.module.scss';
