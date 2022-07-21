@@ -7,7 +7,9 @@ interface HeaderProps {
   isExtended?: boolean;
 }
 
-export function Header({ isExtended = false }: HeaderProps): JSX.Element {
+export default function Header({
+  isExtended = false,
+}: HeaderProps): JSX.Element {
   return (
     <header className={styles.container}>
       <div className={`${styles.wrapper} ${isExtended ? styles.extended : ''}`}>
